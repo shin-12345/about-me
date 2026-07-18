@@ -3,32 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<div class="card">
+<header>
     <h1>MY PROFILE</h1>
+    <p>Welcome to my page!</p>
+</header>
 
-    <h2>名前</h2>
-    <p>山田 太郎</p>
+<section class="profile">
+    <img src="https://picsum.photos/200" alt="プロフィール画像">
+    <div>
+        <h2>山田 太郎</h2>
+        <p>
+            高校生です。HTML・CSS・JavaScriptを勉強しています。
+            将来はWebデザイナーやエンジニアになりたいです。
+        </p>
+    </div>
+</section>
 
-    <h2>好きなこと</h2>
-    <div class="box">
-        <p>🎮 ゲーム</p>
-        <p>⚽ サッカー</p>
-        <p>🍜 ラーメン巡り</p>
+<section class="cards">
+
+    <div class="card">
+        <h3>🎯 趣味</h3>
+        <ul>
+            <li>ゲーム</li>
+            <li>映画鑑賞</li>
+            <li>旅行</li>
+        </ul>
     </div>
 
-    <h2>ひとこと</h2>
-    <p id="comment">ボタンを押してね！</p>
+    <div class="card">
+        <h3>💻 スキル</h3>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="bar"><div class="html"></div></div>
 
-    <button onclick="changeComment()">メッセージを見る</button>
-</div>
+            <span>CSS</span>
+            <div class="bar"><div class="css"></div></div>
 
-<script src="script.js"></script>
+            <span>JavaScript</span>
+            <div class="bar"><div class="js"></div></div>
+        </div>
+    </div>
 
+    <div class="card">
+        <h3>🌟 目標</h3>
+        <p>
+            Webサイトを一人で作れるようになり、
+            オリジナル作品をたくさん公開したいです。
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <button onclick="changeColor()">テーマカラー変更</button>
+</footer>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>
-
