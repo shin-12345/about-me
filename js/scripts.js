@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
-    alert('自己紹介サイトへようこそ！');
-    console.log('自己紹介サイトへようこそ！');
-});
+function showMessage() {
+    document.getElementById("message").textContent =
+        "見てくれてありがとうございます！";
+}
